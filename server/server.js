@@ -16,6 +16,10 @@ const app = express();
 connectDB()
 
 app.use(morgan('dev'))
+// app.use(cors({
+//     origin: "*",
+//     credentials: "true"
+//   }))
 app.use(cors())
 app.use(bodyParse.json({ limit: '10mb' }))
 app.use('/img', express.static('uploads'))

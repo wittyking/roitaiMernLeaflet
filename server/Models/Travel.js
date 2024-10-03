@@ -11,7 +11,10 @@ const travelSchema = mongoose.Schema({
     lng: {
         type: String
     },
-    file: String
+    file: String,
+    province:String,
+    district:String,
+    subdistrict:String
 }, { timestamps: true })
 
 module.exports = mongoose.model('travel', travelSchema)
